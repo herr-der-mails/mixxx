@@ -4,7 +4,7 @@
 #include <QGLFramebufferObject>
 #include <QGLShaderProgram>
 #include <QtOpenGL>
-#include <QOpenGLFunctions_2_1>
+#include <QT_OPENGL_ES_2>
 
 #include "track/track.h"
 #include "util/memory.h"
@@ -12,7 +12,7 @@
 
 class GLSLWaveformRendererSignal: public QObject,
         public WaveformRendererSignalBase,
-        protected QOpenGLFunctions_2_1 {
+        protected QT_OPENGL_ES_2 {
     Q_OBJECT
   public:
     GLSLWaveformRendererSignal(WaveformWidgetRenderer* waveformWidgetRenderer,
