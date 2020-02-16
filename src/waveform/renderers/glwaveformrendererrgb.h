@@ -8,7 +8,7 @@
 class ControlObject;
 
 class GLWaveformRendererRGB: public WaveformRendererSignalBase,
-        protected QOpenGLFunctions_2_1 {
+        protected QT_OPENGL_ES_2 {
   public:
     explicit GLWaveformRendererRGB(
             WaveformWidgetRenderer* waveformWidgetRenderer);
