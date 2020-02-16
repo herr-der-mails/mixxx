@@ -1,13 +1,13 @@
 #ifndef GLWAVEFORMRENDERERSIMPLESIGNAL_H
 #define GLWAVEFORMRENDERERSIMPLESIGNAL_H
 
-#include <QOpenGLFunctions_2_1>
+#include <QT_OPENGL_ES_2>
 
 #include "waveformrenderersignalbase.h"
 
 class ControlObject;
 
-class GLWaveformRendererSimpleSignal : public WaveformRendererSignalBase, protected QOpenGLFunctions_2_1 {
+class GLWaveformRendererSimpleSignal : public WaveformRendererSignalBase, protected QT_OPENGL_ES_2 {
 public:
     explicit GLWaveformRendererSimpleSignal(WaveformWidgetRenderer* waveformWidgetRenderer);
     virtual ~GLWaveformRendererSimpleSignal();
